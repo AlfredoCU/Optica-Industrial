@@ -1,100 +1,199 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
+@section('titlepag')
+{{ trans('Inicio') }}    
+@endsection
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+@section('webtitle', 'Óptica Industrial - Inicio')
+@section('webdescription', 'Más de 50 años de formar parte de la salud de sus ojos.')
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+@section('title', 'Óptica Industrial - Inicio')
+@section('description', 'Más de 50 años de formar parte de la salud de sus ojos.')
+@section('image', '')
+@section('url', '')
 
-            .full-height {
-                height: 100vh;
-            }
+@section('twitterimage', '')
+@section('twittertitle', 'Óptica Industrial - Inicio')
+@section('twitterdescription', 'Más de 50 años de formar parte de la salud de sus ojos.')
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
+@section('wcarouselbanner')
+<div class="d-flex justify-content-center">
+    <div id="carouselExampleIndicators" class="carousel slide imgCarousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img src="{{ asset('img/welcome/Bienvenido.jpg') }}" class="d-block w-100" alt="Imagen de un negocio concretado">
+                <div class="carousel-caption d-md-block textcarousel">
+                    <h1 class="titulo h1 font-weight-bold"> Bienvenido a Óptica Industrial </h1>
+                    <p class="di-none mt-3"> Más de 50 años de formar parte de la salud de sus ojos </p>
+                    <a class="di-none1 btn btn-primary" href="" > ¡Quiero saber más! </a>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('img/welcome/Lentes.jpg') }}" class="d-block w-100" alt="Imagen de planeación de proyectos">
+                <div class="carousel-caption d-md-block textcarousel">
+                    <div class="container col-md-8">
+                        <h2 class="titulo1 h2 font-weight-bold">  Óptica especializada para solucionar problemas de la vista </h2>
+                        <a class="di-none btn btn-primary" href="{{ url('about') }}" > Nosotros </a>
+                    </div>
                 </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('img/welcome/Somos.png') }}" class="d-block w-100" alt="Imagen de equipo">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+@endsection
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+@section('wmain')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <h2 class="text-center p-3 font-weight-bold h1 border-bottom"> Fusionando ideas efectivas </h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="{{ asset('img/welcome/Nosotros.jpg') }}" class="card-img-top mx-auto d-block w-50 mt-1" alt="Imagen de nosotros">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold"> Nosotros </h5>
+                        <p class="card-text"> Buscamos el bienestar y la salud de nuestros clientes. </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" href="{{ url('about') }}" > Más información </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{{ asset('img/welcome/Logo.png') }}" class="card-img-top mx-auto d-block w-50 mt-1" alt="Imagen de Óptica Industrial">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold"> Óptica Industrial </h5>
+                        <p class="card-text"> Óptica Industrial es una empresa profesional, confiable, responsable... </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" href="" > Más información </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{{ asset('img/welcome/Empresa.jpg') }}" class="card-img-top mx-auto d-block w-50 mt-1" alt="Imagen de visitamos tu empresa">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold"> Empresas </h5>
+                        <p class="card-text"> Beneficios para el personal de su empresa.  </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" href="" > Más información </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-4">
+                <div class="card">
+                    <img src="{{ asset('img/welcome/Productos.jpg') }}" class="card-img-top mx-auto d-block w-50 mt-1" alt="Imagen de productos y servicios">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold"> Productos y servicios </h5>
+                        <p class="card-text"> Encontraras micas, armazones, lentes de sol, exámenes de la vista y mucho más. </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" href="" > Más información </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{{ asset('img/welcome/Sucursales.jpg') }}" class="card-img-top mx-auto d-block w-50 mt-1" alt="Imagen de Sucursales">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold"> Sucursales </h5>
+                        <p class="card-text"> Donde encontrarnos. </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" href="" > Más información </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{{ asset('img/welcome/Contactanos.jpg') }}" class="card-img-top mx-auto d-block w-50 mt-1" alt="Imagen de Contáctanos">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold"> Contáctanos </h5>
+                        <p class="card-text"> Estamos a tus órdenes para analizar tus requerimientos y ofrecerte una solución.  </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" href="" > Más información </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <h2 class="text-center mt-5 p-3 font-weight-bold h1 border-bottom"> Comentarios de nuestros clientes </h2>
+</div>
+
+<div class="container">
+    <div class="card-columns">
+        <div class="card border-light mb-3 shadow-sm border-left boder-w">
+            <div class="card-body">
+                <p class="card-text mt-1"> "Un trato especial muy buena calidad y sobre todo los precios." </p>
+                <em class="text-muted"> Alfredo Gutierrez </em>
+            </div>
+        </div>
+        <div class="card border-light mb-3 shadow-sm border-left boder-w">
+            <div class="card-body">
+                <p class="card-text mt-1"> "¡Excelente servicio, atención muy especial para cualquier persona, muy amables, te tratan como si tuvieras años de amistad! Recomendado 100%." </p>
+                <em class="text-muted"> Diana Serrano </em>
+            </div>
+        </div>
+        <div class="card border-light mb-3 shadow-sm border-left boder-w">
+            <div class="card-body">
+                <p class="card-text mt-1"> "¡Excelente atención al cliente!" </p>
+                <em class="text-muted"> Arantza Gutierrez </em>
+            </div>
+        </div>
+        <div class="card border-light mb-3 shadow-sm border-left boder-w">
+            <div class="card-body">
+                <p class="card-text mt-1"> "¡La mejor óptica excelente servicio y calidad!" </p>
+                <em class="text-muted"> Mary Rojo </em>
+            </div>
+        </div>
+        <div class="card border-light mb-3 shadow-sm border-left boder-w">
+            <div class="card-body">
+                <p class="card-text mt-1"> "Muy buen servicio y excelente calidad de lentes." </p>
+                <em class="text-muted"> Ana Caro GV </em>
+            </div>
+        </div>
+        <div class="card border-light mb-3 shadow-sm border-left boder-w">
+            <div class="card-body">
+                <p class="card-text mt-1"> "El mejor servicio. La atención es lo mejor." </p>
+                <em class="text-muted"> Aiima Casa Creativa </em>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <h2 class="text-center mt-5 p-3 font-weight-bold h1 border-bottom"> Conozca a nuestros clientes </h2>
+    <div class="row justify-content-center iconos text-center">
+        <div class="col-12 col-md-4">
+            <img src="{{ asset('img/welcome/Pepsi.png') }}" class="card-img-top mx-auto d-block w-25 mt-1 imglogo" alt="Imagen de productos y servicios">
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="{{ asset('img/welcome/Atletica.png') }}" class="card-img-top mx-auto d-block w-50 mt-1 imglogo" alt="Imagen de productos y servicios">
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="{{ asset('img/welcome/Nissan.png') }}" class="card-img-top mx-auto d-block w-50 mt-1 imglogo" alt="Imagen de productos y servicios">
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="{{ asset('img/welcome/Hersheys.png') }}" class="card-img-top mx-auto d-block w-75 mt-1 imglogo" alt="Imagen de productos y servicios">
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="{{ asset('img/welcome/Honda.png') }}" class="card-img-top mx-auto d-block w-50 mt-1 imglogo" alt="Imagen de productos y servicios">
+        </div>
+    </div>
+</div>
+@endsection

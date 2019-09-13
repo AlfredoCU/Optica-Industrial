@@ -11,6 +11,12 @@
 |
 */
 
+// Bienvenida.
 Route::get('/', function () {
     return view('welcome');
+});
+
+// Nosotros.
+Route::get('/about', function () {
+    return view('about');
 });
