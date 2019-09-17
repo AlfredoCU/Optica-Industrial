@@ -54,23 +54,23 @@
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
-                                <a class="dropdown-item nav-list" href="{{ url('about') }}"> {{ __('Nosotros') }} </a>
+                                <a class="dropdown-item nav-list" href="{{ url('nosotros') }}"> {{ __('Nosotros') }} </a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="dropdown-item nav-list" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Óptica </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href=""> {{ __('Productos y servicios') }} </a>
-                                    <a class="dropdown-item" href=""> {{ __('Campañas y promociones') }} </a>
+                                    <a class="dropdown-item" href="{{ url('productos-y-servicios') }}"> {{ __('Productos y servicios') }} </a>
+                                    <a class="dropdown-item" href="{{ url('campanna-y-promociones') }}"> {{ __('Campañas y promociones') }} </a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="dropdown-item nav-list" href=""> {{ __('Empresas') }} </a>
+                                <a class="dropdown-item nav-list" href="{{ url('para-las-empresas') }}"> {{ __('Empresas') }} </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="dropdown-item nav-list" href=""> {{ __('Sucursales') }} </a>
+                                <a class="dropdown-item nav-list" href="{{ url('sucursales') }}"> {{ __('Sucursales') }} </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="dropdown-item nav-list" href=""> {{ __('Contáctanos') }} </a>
+                                <a class="dropdown-item nav-list" href="{{ url('contactanos') }}"> {{ __('Contáctanos') }} </a>
                             </li>
                         </ul>
                     </div>
@@ -94,25 +94,25 @@
                     <div class="col-6 col-md">
                         <h5> Óptica Industrial </h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="{{ url('about') }}"> Nosotros </a></li>
-                            <li><a class="text-muted" href=""> Misión </a></li>
-                            <li><a class="text-muted" href=""> Visión </a></li>
+                            <li><a class="text-muted" href="{{ url('nosotros') }}"> Nosotros </a></li>
+                            <li><a class="text-muted" href="{{ url('nosotros#mi') }}"> Misión </a></li>
+                            <li><a class="text-muted" href="{{ url('nosotros#mi') }}"> Visión </a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md">
                         <h5> Menú </h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href=""> Productos y Servicios </a></li>
-                            <li><a class="text-muted" href=""> Empresas  </a></li>
-                            <li><a class="text-muted" href=""> Campañas y Promociones </a></li>
-                            <li><a class="text-muted" href=""> Sucursales </a></li>
-                            <li><a class="text-muted" href=""> Contáctanos </a></li>
+                            <li><a class="text-muted" href="{{ url('productos-y-servicios') }}"> Productos y Servicios </a></li>
+                            <li><a class="text-muted" href="{{ url('campanna-y-promociones') }}"> Campañas y Promociones </a></li>
+                            <li><a class="text-muted" href="{{ url('para-las-empresas') }}"> Empresas  </a></li>
+                            <li><a class="text-muted" href="{{ url('sucursales') }}"> Sucursales </a></li>
+                            <li><a class="text-muted" href="{{ url('contactanos') }}"> Contáctanos </a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md">
                         <h5> Acerca de </h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href=""> Ubícanos </a></li>
+                            <li><a class="text-muted" href="{{ url('contactanos') }}"> Ubícanos </a></li>
                             <li><a class="text-muted" target="_blank" href=""> Aviso de Privacidad </a></li>
                             <li><a class="text-muted" target="_blank" href=""> Términos y Condiciones </a></li>
                         </ul>
@@ -122,6 +122,7 @@
                         <ul class="list-unstyled text-small">
                             <li><a class="text-muted" target="_blank" href="https://www.facebook.com/opticaindustrialmx"> Facebook </a></li>
                             <li><a class="text-muted" target="_blank" href="https://www.instagram.com/opticaindustrial.mx/?hl=es-la"> Instagram </a></li>
+                            <li><a class="text-muted" href="mailto:opticaindustrial@hotmail.com"> Email </a></li>
                         </ul>
                     </div>
                 </div>

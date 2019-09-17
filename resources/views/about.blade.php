@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('titlepag')
-{{ trans('Inicio') }}    
+{{ trans('Nosotros') }}    
 @endsection
 
 @section('webtitle', 'Óptica Industrial - Nosotros')
@@ -24,8 +24,7 @@
         <img src="{{ asset('img/about/Nosotros.png') }}" class="card-img-top" alt="Imagen de Nosotros">
         <div class="card-body">
           <h2 class="card-title font-weight-bolder titcolor"> Nosotros </h2>
-          <P class="card-text text-muted">  
-            Óptica Industrial es una empresa profesional, confiable, responsable y orgullosamente tapatía, dedicada a la prestación de servicio integral. </P>
+          <P class="card-text text-muted"> Óptica Industrial es una empresa profesional, confiable, responsable y orgullosamente tapatía, dedicada a la prestación de servicio integral. </P>
         </div>
       </div>
     </div>
@@ -35,7 +34,7 @@
 
 @section('wmain')
 <div class="container">
-  <div class="row justify-content-center text-center">
+  <div class="row justify-content-center text-center" id="mi">
     <div class="col-12 col-md-5">
       <div class="iconos mb-3"> 
         <i class="fas fa-chart-line"></i>

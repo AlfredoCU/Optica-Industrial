@@ -30,7 +30,7 @@
                 <div class="carousel-caption d-md-block textcarousel">
                     <h1 class="titulo h1 font-weight-bold"> Bienvenido a Óptica Industrial </h1>
                     <p class="di-none mt-3"> Más de 50 años de formar parte de la salud de sus ojos </p>
-                    <a class="di-none1 btn btn-primary" href="" > ¡Quiero saber más! </a>
+                    <a class="di-none1 btn btn-primary" href="{{ url('productos-y-servicios') }}" > ¡Quiero saber más! </a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -38,7 +38,7 @@
                 <div class="carousel-caption d-md-block textcarousel">
                     <div class="container col-md-8">
                         <h2 class="titulo1 h2 font-weight-bold">  Óptica especializada para solucionar problemas de la vista </h2>
-                        <a class="di-none btn btn-primary" href="{{ url('about') }}" > Nosotros </a>
+                        <a class="di-none btn btn-primary" href="{{ url('nosotros') }}" > Nosotros </a>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                         <p class="card-text"> Buscamos el bienestar y la salud de nuestros clientes. </p>
                     </div>
                     <div class="card-footer">
-                        <a class="btn btn-primary" href="{{ url('about') }}" > Más información </a>
+                        <a class="btn btn-primary" href="{{ url('nosotros') }}"> Más información </a>
                     </div>
                 </div>
                 <div class="card">
@@ -81,7 +81,7 @@
                         <p class="card-text"> Óptica Industrial es una empresa profesional, confiable, responsable... </p>
                     </div>
                     <div class="card-footer">
-                        <a class="btn btn-primary" href="" > Más información </a>
+                        <a class="btn btn-primary" href=""> Más información </a>
                     </div>
                 </div>
                 <div class="card">
@@ -91,7 +91,7 @@
                         <p class="card-text"> Beneficios para el personal de su empresa.  </p>
                     </div>
                     <div class="card-footer">
-                        <a class="btn btn-primary" href="" > Más información </a>
+                        <a class="btn btn-primary" href="{{ url('para-las-empresas') }}"> Más información </a>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
                         <p class="card-text"> Encontraras micas, armazones, lentes de sol, exámenes de la vista y mucho más. </p>
                     </div>
                     <div class="card-footer">
-                        <a class="btn btn-primary" href="" > Más información </a>
+                        <a class="btn btn-primary" href="{{ url('productos-y-servicios') }}"> Más información </a>
                     </div>
                 </div>
                 <div class="card">
@@ -113,7 +113,7 @@
                         <p class="card-text"> Donde encontrarnos. </p>
                     </div>
                     <div class="card-footer">
-                        <a class="btn btn-primary" href="" > Más información </a>
+                        <a class="btn btn-primary" href="{{ url('sucursales') }}"> Más información </a>
                     </div>
                 </div>
                 <div class="card">
@@ -123,7 +123,7 @@
                         <p class="card-text"> Estamos a tus órdenes para analizar tus requerimientos y ofrecerte una solución.  </p>
                     </div>
                     <div class="card-footer">
-                        <a class="btn btn-primary" href="" > Más información </a>
+                        <a class="btn btn-primary" href="{{ url('contactanos') }}" > Más información </a>
                     </div>
                 </div>
             </div>

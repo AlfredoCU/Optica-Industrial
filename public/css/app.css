@@ -10781,3 +10781,47 @@ a.text-dark:focus {
   font-size: 5rem;
   color: #227DC7;
 }
+
+/******* Sucursales. *******/
+.imgLogo {
+  width: 20%;
+}
+
+.mapico {
+  font-size: 3rem;
+  color: #227DC7;
+}
+
+.map {
+  width: 500px;
+  height: 350px;
+}
+
+/******* Contáctanos. *******/
+.bgcolorcontenedor {
+  background-color: rgba(32, 125, 211, 0.5);
+}
+
+.social {
+  color: #227DC7 !important;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: #646363 !important;
+  text-decoration: none;
+}
+
+@media(max-width: 860px) {
+  .social .list-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/******* Empresas. *******/
+.iconos-e [class^="fas"] {
+  font-size: 12rem !important;
+  color: #035B93;
+}
