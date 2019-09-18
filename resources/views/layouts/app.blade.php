@@ -11,6 +11,7 @@
         <!-- Metadatos del sitio web-->
         <meta name="title" content="@yield('webtitle')">
         <meta name="description" content="@yield('webdescription')">
+        <meta name="keywords" content="optica, opticas, lentes, anteojos, gafas, armazones, ojo, ojos, lasik, catarata, cataratas, pupilentes, ojos, oftalmologo, oculista, optometrista" />
         
         <!-- Metadatos de og -->
         <meta property="og:site_name" content="Óptica Industrial">
@@ -102,8 +103,8 @@
                     <div class="col-6 col-md">
                         <h5> Menú </h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="{{ url('productos-y-servicios') }}"> Productos y Servicios </a></li>
-                            <li><a class="text-muted" href="{{ url('campanna-y-promociones') }}"> Campañas y Promociones </a></li>
+                            <li><a class="text-muted" href="{{ url('productos-y-servicios') }}"> Productos y servicios </a></li>
+                            <li><a class="text-muted" href="{{ url('campanna-y-promociones') }}"> Campañas y promociones </a></li>
                             <li><a class="text-muted" href="{{ url('para-las-empresas') }}"> Empresas  </a></li>
                             <li><a class="text-muted" href="{{ url('sucursales') }}"> Sucursales </a></li>
                             <li><a class="text-muted" href="{{ url('contactanos') }}"> Contáctanos </a></li>
@@ -112,7 +113,7 @@
                     <div class="col-6 col-md">
                         <h5> Acerca de </h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="{{ url('contactanos') }}"> Ubícanos </a></li>
+                            <li><a class="text-muted" href="{{ url('sucursales') }}"> Ubícanos </a></li>
                             <li><a class="text-muted" target="_blank" href=""> Aviso de Privacidad </a></li>
                             <li><a class="text-muted" target="_blank" href=""> Términos y Condiciones </a></li>
                         </ul>

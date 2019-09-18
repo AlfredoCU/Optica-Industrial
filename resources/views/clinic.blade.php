@@ -21,7 +21,7 @@
 <div class="container">
   <img src="{{ asset('img/welcome/Logo.png') }}" class="card-img-top imgLogo" alt="Logotipo de Óptica Industrial">
   <p class="h2 m-3"> Vístanos en cualquiera de nuestras sucursales, estamos a sus órdenes. </p>
-  <p><a href="{{ url('contactanos') }}" class="btn btn-primary my-2"> Contáctanos </a></p>
+  <a href="{{ url('contactanos') }}" class="btn btn-primary my-2"> Contáctanos </a>
 </div>
 </section>
 @endsection

@@ -81,7 +81,7 @@
                         <p class="card-text"> Óptica Industrial es una empresa profesional, confiable, responsable... </p>
                     </div>
                     <div class="card-footer">
-                        <a class="btn btn-primary" href=""> Más información </a>
+                        <a class="btn btn-primary" href="{{ url('campanna-y-promociones') }}"> Más información </a>
                     </div>
                 </div>
                 <div class="card">
