@@ -86,7 +86,7 @@
                 <div class="card">
                     <img src="{{ asset('img/welcome/Empresa.png') }}" class="card-img-top mx-auto d-block w-50 mt-1" alt="Imagen de visitamos tu empresa">
                     <div class="card-body">
-                        <h5 class="card-title font-weight-bold"> Empresas </h5>
+                        <h5 class="card-title font-weight-bold"> Seguridad Industrial Visual </h5>
                         <p class="card-text"> Beneficios para el personal de su empresa.  </p>
                     </div>
                     <div class="card-footer">

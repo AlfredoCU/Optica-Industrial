@@ -25,7 +25,7 @@
           <img src="{{ asset('img/welcome/Logo.png') }}" class="card-img-top w-25" alt="Imagen de Empresas">
         </div>
         <div class="card-body text-justify">
-          <h2 class="card-title font-weight-bolder titcolor"> Empresas </h2>
+          <h2 class="card-title font-weight-bolder titcolor"> Seguridad Industrial Visual - Empresas </h2>
           <P class="card-text text-muted"> Óptica Industrial es una empresa confiable, responsable y con un respaldo profesional de 50 años de experiencia en el ramo; nos hemos distinguido por la alta calidad en nuestra atención, en la calidad de nuestros materiales donde garantizamos su satisfacción. </P>
           <P class="card-text text-muted"> Contamos con personal capacitado y titulado para dar el mejor servicio además de tener laboratorio propio de alta tecnología en cristal y CR 39 (micas). </p>
           <a href="{{ url('contactanos') }}" class="btn btn-primary my-2"> Contáctanos </a>
