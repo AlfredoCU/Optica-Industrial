@@ -61,14 +61,11 @@
                                 <a class="dropdown-item nav-list" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Óptica </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="{{ url('productos-y-servicios') }}"> {{ __('Productos y servicios') }} </a>
-                                    <a class="dropdown-item" href="{{ url('campanna-y-promociones') }}"> {{ __('Campañas y promociones') }} </a>
+                                    <a class="dropdown-item" href="{{ url('campannas-y-promociones') }}"> {{ __('Campañas y promociones') }} </a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="dropdown-item nav-list" href="{{ url('para-las-empresas') }}"> {{ __('Empresas') }} </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="dropdown-item nav-list" href="{{ url('sucursales') }}"> {{ __('Sucursales') }} </a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="dropdown-item nav-list" href="{{ url('contactanos') }}"> {{ __('Contáctanos') }} </a>
@@ -104,16 +101,14 @@
                         <h5> Menú </h5>
                         <ul class="list-unstyled text-small">
                             <li><a class="text-muted" href="{{ url('productos-y-servicios') }}"> Productos y servicios </a></li>
-                            <li><a class="text-muted" href="{{ url('campanna-y-promociones') }}"> Campañas y promociones </a></li>
+                            <li><a class="text-muted" href="{{ url('campannas-y-promociones') }}"> Campañas y promociones </a></li>
                             <li><a class="text-muted" href="{{ url('para-las-empresas') }}"> Empresas  </a></li>
-                            <li><a class="text-muted" href="{{ url('sucursales') }}"> Sucursales </a></li>
-                            <li><a class="text-muted" href="{{ url('contactanos') }}"> Contáctanos </a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md">
                         <h5> Acerca de </h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="{{ url('sucursales') }}"> Ubícanos </a></li>
+                            <li><a class="text-muted" href="{{ url('contactanos') }}"> Contáctanos </a></li>
                             <li><a class="text-muted" target="_blank" href=""> Aviso de Privacidad </a></li>
                             <li><a class="text-muted" target="_blank" href=""> Términos y Condiciones </a></li>
                         </ul>
@@ -121,8 +116,8 @@
                     <div class="col-6 col-md">
                         <h5> Redes Sociales </h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" target="_blank" href="https://www.facebook.com/opticaindustrialmx"> Facebook </a></li>
-                            <li><a class="text-muted" target="_blank" href="https://www.instagram.com/opticaindustrial.mx/?hl=es-la"> Instagram </a></li>
+                            <li><a class="text-muted" target="_blank" href=""> Facebook </a></li>
+                            <li><a class="text-muted" target="_blank" href=""> Instagram </a></li>
                             <li><a class="text-muted" href="mailto:opticaindustrial@hotmail.com"> Email </a></li>
                         </ul>
                     </div>

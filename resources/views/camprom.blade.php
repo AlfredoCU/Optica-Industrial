@@ -34,10 +34,10 @@
         <div class="card-body">
           <div class="row">
             <div class="col-md-6 mt-2">
-              <img src="{{ asset('img/campromo/Promo1.jpg') }}" class="img-fluid" alt="Imagen de campañas y promociones">
+              <img src="{{ asset('img/campromo/Promo.jpg') }}" class="img-fluid" alt="Imagen de campañas y promociones">
             </div>
             <div class="col-md-6 mt-2">
-              <img src="{{ asset('img/campromo/Promo.jpg') }}" class="img-fluid" alt="Imagen de campañas y promociones">
+              <img src="{{ asset('img/campromo/Promo1.jpg') }}" class="img-fluid" alt="Imagen de campañas y promociones">
             </div>
           </div>
         </div>
@@ -52,18 +52,6 @@
       <div class="card mb-5 border-light mb-3 shadow-sm border-left boder-w">
         <div class="card-body">
           <img src="{{ asset('img/campromo/camp.jpg') }}" class="img-fluid" alt="Imagen de campañas y promociones">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="d-flex justify-content-center">
-    <div class="col-md-8">
-      <div class="card mb-5 border-light mb-3 shadow-sm border-left boder-w">
-        <div class="card-body">
-          <img src="{{ asset('img/campromo/Promo2.jpg') }}" class="img-fluid" alt="Imagen de campañas y promociones">
         </div>
       </div>
     </div>

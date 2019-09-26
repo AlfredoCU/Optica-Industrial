@@ -16,18 +16,13 @@ Route::get('/productos-y-servicios', function () {
 });
 
 // Campañas y promociones.
-Route::get('/campanna-y-promociones', function () {
+Route::get('/campannas-y-promociones', function () {
     return view('camprom');
 });
 
 // Empresas.
 Route::get('/para-las-empresas', function () {
     return view('company');
-});
-
-// Sucursales.
-Route::get('/sucursales', function() {
-    return view('clinic');
 });
 
 // Contáctanos.
