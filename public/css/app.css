@@ -10645,7 +10645,6 @@ a.text-dark:focus {
 }
 
 /* Mis estilos. */
-
 /******* Mejoras en el menu se encuentran en links de nosotros, productos, etc.*******/
 .nav-list {
   display: block;
@@ -10761,7 +10760,7 @@ a.text-dark:focus {
   }
 }
 
-/******* Comentarios. *******/
+/******* Card. *******/
 .boder-w {
   border-left-width: 0.3em !important;
   border-left-color: #227DC7 !important;
@@ -10769,11 +10768,28 @@ a.text-dark:focus {
 
 /******* Marca. *******/
 .imglogo {
-  filter:grayscale(100%);
+  margin-bottom: 3%;
+  /* filter:grayscale(100%); */
 }
 
 .imglogo:hover {
-  filter:grayscale(0%);
+  filter:grayscale(100%); /* 0 */
+}
+
+@media (min-width:767px) {
+  .img-mostrar {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .imglogo {
+    display: none !important;
+    /*
+      margin-bottom: 5%;
+      max-width: 30%;
+    */
+  }
 }
 
 /******* Nosotros. *******/
@@ -10782,7 +10798,7 @@ a.text-dark:focus {
   color: #227DC7;
 }
 
-/******* Sucursales. *******/
+/******* Domicilio. *******/
 .imgLogo {
   width: 20%;
 }
