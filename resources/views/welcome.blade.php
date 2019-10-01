@@ -64,7 +64,7 @@
         <div class="col-md-12">
             <div class="card-deck">
                 <div class="card">
-                    <img src="{{ asset('img/welcome/Nosotros.jpg') }}" class="card-img-top mx-auto d-block w-50 mt-1" alt="Imagen de nosotros">
+                    <img src="{{ asset('img/welcome/Nosotros.jpeg') }}" class="card-img-top mx-auto d-block w-50 mt-1" alt="Imagen de nosotros">
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold"> Nosotros </h5>
                         <p class="card-text"> Buscamos el bienestar y la salud de nuestros clientes. </p>
